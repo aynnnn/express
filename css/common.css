@@ -6,7 +6,7 @@ body {
   line-height: 1.8;
   letter-spacing: 1px;
   word-break: break-all;
-  color: #333;
+  color: rgb(87, 38, 29);
 }  
 
 a {
@@ -64,7 +64,7 @@ li {
   width: 100%;
   height: 500px;
   overflow: hidden;
-  background: url("../img/top.png") no-repeat center;
+  background: url("../img/top.jpg") no-repeat center;
   background-size: cover;
 }
 
@@ -82,31 +82,33 @@ li {
 .top_inner {
   position: absolute;
   text-align: center;
+  writing-mode: vertical-rl;
   z-index: 2;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+  
 }
 
 .top_inner h1 {
-  font-size: 60px;
-  font-weight: 700;
-  color: #ddd;
+  font-size: 70px;
+  font-weight: 600;
+  color: #803333;
 }
 
 .top_inner p {
   font-size: 20px;
   font-weight: 700;
-  color: #ddd;
+  color: #803333;
 }
 
 .section {
   padding: 150px 0;
-  border-top: solid 3px #fe9;
+  border-top: solid 5px rgba(213, 241, 198, 0.589);
 }
 
 .section:nth-of-type(odd) {
-  background-color: #eee;
+  background-color: rgb(174, 177, 140);
 }
 
 .about_img {
@@ -116,12 +118,14 @@ li {
 .about_img::after {
   content: "";
   position: absolute;
-  background: url("../img/about.png") no-repeat center;
+  background: url("../img/about_monimg.jpeg") no-repeat center;
   background-size: cover;
   top: 0;
   left: 50%;
   width: 50%;
-  height: 100%;
+  height: 90%;
+  border-radius: 20px;
+  margin-top: 20px;
 }
 
 .concept_img {
@@ -131,12 +135,14 @@ li {
 .concept_img::after {
   content: "";
   position: absolute;
-  background: url("../img/concept.png") no-repeat center;
+  background: url("../img/topimg.jpeg") no-repeat center;
   background-size: cover;
   top: 0;
   right: 50%;
   width: 50%;
-  height: 100%;
+  height: 90%;
+  border-radius: 20px;
+  margin-top: 20px;
 }
 
 .descript {
@@ -156,8 +162,8 @@ li {
   line-height: 1.4;
   font-size: 40px;
   font-weight: bold;
-  color: #555;
-  border-left: solid 4px #fe9;
+  color: rgb(82, 99, 90);
+  border-left: solid 4px rgb(82, 99, 90);
 }
 
 .title span {
@@ -175,17 +181,12 @@ li {
   color: #555;
 }
 
-.txt p strong {
-  font-weight: bold;
-  color: #555;
-  background: linear-gradient(transparent 60%, #fe9);
-}
 
 .frame {
   display: inline-block;
   width: 35%;
   height: 100%;
-  background-color: #eee;
+  background-color: rgb(174, 177, 140);
   border-radius: 5px;
   margin: 30px;
   padding: 40px;
@@ -219,6 +220,10 @@ li {
   padding-right: 10px;
 }
 
+.menu_title {
+  text-align: center;
+}
+
 .photo {
   width: 340px;
   height: 220px;
@@ -250,29 +255,31 @@ li {
   border-radius: 5px;
   margin: 30px;
   padding: 40px;
+  justify-content: center;
+  align-items: center;
 }
 
 .profile_bg { 
-  background-color: #fff; 
-  height: 460px; 
+  background-color:rgb(253, 247, 239); 
+  height: 400px; 
 }
 
-.intro {
-  display: flex;
-}
-
-.intro_img {
-  padding-right: 40px;
+.drink_menu{
+  padding: 20px;
+  width: 100%;
+  height: 100%;
 }
 
 .txt ul {
-  padding: 10px;
+  padding-bottom: 20px;
 }
 
 .txt ul li {
   position: relative;
   padding-left: 20px;
   margin-top: 5px;
+  text-align: left;
+
 }
 
 .txt ul li::before {
@@ -284,7 +291,7 @@ li {
 
 .txt table th {
   padding-right: 10px;
-  border-right: solid 3px #fe9;
+  border-right: solid 3px rgb(213, 241, 198);
 }
 
 .txt table td {
@@ -292,59 +299,70 @@ li {
 }
 
 
-.blog_block {
+.news_block {
   display: inline-table;
   margin: 5px;
 }
 
-.blog_body {
+.news_body {
   margin-top: 10px;
+
 }
 
-.blog_body h3 {
+.news_body h3 {
   font-size: 18px;
   font-weight: bold;
   color: #555;
   margin-top: 10px;
 }
 
-.blog_body p {
+.news_body p {
   font-size: 14px;
   color: #555;
 }
 
+#contact {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background: url("../img/kuri.jpeg") no-repeat center;
+  background-size: cover;
+  border-top: solid 4px rgb(82, 99, 90);
+  
+}
+#contact .button {
+  margin-top: 5%;
+}
 .button {
   text-align: center;
   padding: 15px;
-  background-color: #fe9;
+  background-color: rgb(79, 100, 69);
   border-radius: 10px;
   width: 25%;
   margin:0 auto 150px
 }
-
 .button:hover {
   cursor: pointer;
-  background-color: "ff6";
+  background-color:bisque;
 }
-
 .button a {
   font-size: 18px;
-  color: #555;
+  color: rgb(228, 217, 217);
 }
-
 .bottom {
-  background-color: #555;
+  background-color: rgb(174, 177, 140);
   padding: 30px 0;
   text-align: center;
   color: #eee;
-}
 
+}
 .footer_logo {
   text-align: center;
 }
-
-.footer_logo img {
-  width: 200px;
+.footer a  {
+  font-size: 40px;
+  color: #803333;
 }
 
 .footer_sns {
